@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(128, 128, 125);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.user-input{
+  background-color: white;
+  width:99%;
+  margin:auto;
+  position:absolute;
+  bottom:4px;
+  left:0;
+  right:0;
+  height:50px;
+  padding:5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.user-input textarea{
+  width:100%; /*bhale hi width 100 % h but send(button) ko bhi usi line m jaga milegi kyuki parent displayflex h  and flex wrap set nhi h ,agr flex wrap set hota tb nvi line m chle jata tb textarea ki width km krni padti ,or han width 100% ho ya 1000% display flex jb bhi ho sare flex k children ek hi line m aa jate h or unki width auto shrink ho jati h kyuki unhe ek hi line m fit hona h pr flex-shrink(on child) 0 krne s rehnge to tab bhi ek hi line m prantu scroll hone lagenge and flex wrap na hone k karan navi line mbhi nhi gya  */ 
+  height:100%;
+  border:none;
+  padding:5px;
+  box-sizing: border-box;
+  font-size:x-large;
+  line-break: strict;
+}
+.user-input textarea:focus{
+  outline: none;
+}
+
+.user-input button{
+  width:80px;
+  height:40px;
+  color:white;
+  background-color: blue;
+  font-weight: bold;
+  border-radius: 5px;
+  border:none;
+  font-size:large;
+  
+}
+.sender{
+  display:flex;
+  padding: 5px;
+  margin-top:10px;
+  box-sizing: border-box;
+  width:100%;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+.sender div{
+min-width: 14%;
+max-width:70%;
+background-color: white;
+border-top-left-radius:20px ;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+padding:10px;
+box-sizing: border-box;
+margin-left: 14px;
+font-size: large;
+word-break: break-all;
+min-height: 100px;
+}
+.sender span{
+position:relative;
+width:93px;  
+height:100px;
+order:1;
+}
+.sender span span:nth-child(2){
+word-break: break-all;
+padding:5px;
+color:white;
+box-sizing: border-box;
+position:absolute;
+bottom:0;
+top:55px;
+text-align: center;
+text-transform: capitalize;
+}
+
+.sender span span:nth-child(1){
+position:absolute;
+top:5px;
+left:0;
+right:0;
+margin:auto;
+
+}
+.container{
+  padding:13px;
+  height:90vh;
+  position:absolute;
+  width:50%;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  background-color: black;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.receiver{
+ display:flex;
+  padding: 5px;
+  margin-top:10px;
+  box-sizing: border-box;
+  align-items:flex-end;
+  width:100%;
+}
+.receiver div{
+background-color: white;
+min-width: 14%;
+max-width:70%;
+border-top-left-radius:20px ;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+padding:10px;
+box-sizing: border-box;
+margin-left: 14px;
+font-size: large;
+word-break: break-all;
+min-height: 100px;
+}
+.receiver span{
+position:relative;
+width:93px;  
+height:100px;
+}
+.receiver span span:nth-child(2){
+word-break: break-all;
+padding:5px;
+color:white;
+box-sizing: border-box;
+position:absolute;
+bottom:0;
+top:55px;
+text-align: center;
+text-transform: capitalize;
+
+}
+
+.receiver span span:nth-child(1){
+position:absolute;
+top:5px;
+left:0;
+right:0;
+margin:auto;
+
+}
+.Chats{
+ width:100%;
+ height:90%;
+  overflow-y: scroll;
+}
+.Chats::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+ .container{
+  height:100%;
+  width:100%;
+ }
+}
+.user-input textarea::-webkit-scrollbar {
+  display: none;
+}

@@ -1,1 +1,1 @@
-export const hostUrl = process.env.REACT_APP_STAGE === 'development' ? 'http://localhost:5000' : 'http'
+export const hostUrl = process.env.REACT_APP_STAGE === 'development' ? 'http://localhost:5000' : 'https://chatapp-cil9.onrender.com'

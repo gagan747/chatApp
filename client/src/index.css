@@ -175,6 +175,12 @@ margin:auto;
   height:100%;
   width:100%;
  }
+ .sender div{
+  min-width:40%;
+ }
+ .receiver div{
+  min-width:40%;
+ }
 }
 .user-input textarea::-webkit-scrollbar {
   display: none;
